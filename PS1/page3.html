@@ -109,6 +109,17 @@
     flex-wrap: wrap;
   }
 
+  .hide {
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 16px;
+    height: 16px;
+    background-image: url("images/cross.png");
+    cursor: pointer;
+  }
+
   .person {
     width: 26%;
     margin-bottom: 20px;
@@ -175,7 +186,7 @@
         <img src="https://loremflickr.com/100/80?lock=19" class="person" data-name="Terry S. Nelson">
         <img src="https://loremflickr.com/100/80?lock=20" class="person" data-name="Dorothy D. Battaglia">
       </div>
-      <button class="hide">Крута у вас команда!</button>
+      <span class="hide"></span>
     </div>
   </main>
   <footer>
