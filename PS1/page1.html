@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ru-UA">
 
 <head>
@@ -22,11 +23,11 @@
   <link rel="icon" type="image/ico" href="./images/shopping.ico">
 </head>
 
-<body style="overflow: hidden;margin: auto;">
-  <header align="middle">
+<body>
+  <header>
     <br>
-    <h1 style="color: yellow
-">SPAGHETTI.ua</h1>
+    <h1>
+      SPAGHETTI.ua</h1>
     <hr>
     <button class="button" type="button">Меню</button>
     <button class="button" type="button">Доставка</button>
@@ -38,58 +39,63 @@
     <h3>Безкоштовна доставка в радіусі 5км!</h3>
   </main>
   <footer>
-    <div><img width="20" src="./images/phone.svg"><span><a href="tel:+380987654321">+380 98 765 43 21</a></span></div>
-    <div><img width="20" src="./images/email.svg"><span><a href="mailto:buy@spaghetti.ua">buy@spaghetti.ua</a></span></div>
+    <div><img width="20" src="./images/phone.svg" alt=""><span><a href="tel:+380987654321">+380 98 765 43 21</a></span></div>
+    <div><img width="20" src="./images/email.svg" alt=""><span><a href="mailto:buy@spaghetti.ua">buy@spaghetti.ua</a></span></div>
   </footer>
-  <style>
-  body {
-    text-align: center;
-    margin: 0;
-    height: 100%;
-    background: url("./images/pasta.jpg");
-    background-size: cover;
-    background-position: center center;
-
-  }
-
-  .button {
-    height: 30px;
-    width: 90px;
-    vertical-align: bottom;
-    line-height: normal;
-    background: white;
-    cursor: pointer;
-  }
-
-  .button:hover {
-    background-color: lightgrey;
-  }
-
-  main {
-
-    margin-top: 150px;
-    font-size: 2rem;
-    color: yellow;
-  }
-
-  footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, .7);
-    text-align: center;
-  }
-
-  footer div {
-    display: inline-block;
-    margin: 10px;
-  }
-
-  span {
-    vertical-align: top;
-  }
-
-  </style>
 </body>
+<style>
+body {
+  overflow: hidden;
+  margin: auto;
+  text-align: center;
+  margin: 0;
+  height: 100%;
+  background: url("./images/pasta.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+h1 {
+  color: yellow;
+}
+
+.button {
+  height: 30px;
+  width: 90px;
+  vertical-align: bottom;
+  line-height: normal;
+  background: white;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: lightgrey;
+}
+
+main {
+
+  margin-top: 150px;
+  font-size: 2rem;
+  color: yellow;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, .7);
+  text-align: center;
+}
+
+footer div {
+  display: inline-block;
+  margin: 10px;
+}
+
+span {
+  vertical-align: top;
+}
+
+</style>
 
 </html>
