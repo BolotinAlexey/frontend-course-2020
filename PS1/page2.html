@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <title>Работа с формами</title>
   <style>
-    input[type=number]:invalid {
+    #year:invalid {
       background: #fdd; /* Красный цвет фона */
 
     }
-    input[type=number]:valid {
+    #year:valid {
       background: #dfd; /* Зелёный цвет фона */
     } 
 
@@ -28,7 +28,8 @@
       vertical-align: top;
     }
     label:first-child { width: 40%; }
-    input[type=checkbox] { display: none; }
+    #heart { display: none; }
+    #heart:checked + svg {fill: red;}
     label:last-child { text-align: left; }
     input[type=submit] {
       display: flex;
