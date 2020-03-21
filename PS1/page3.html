@@ -88,16 +88,22 @@
 
   #modal {
     position: fixed;
+
     top: 64px;
+    bottom: 0;
     left: 0;
     right: 0;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 900px;
+    max-height: calc(100% - 264px);
     background-color: white;
     border-radius: 10px;
   }
 
   .team {
+    max-height: calc(100% - 150px);
+    overflow: scroll;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
