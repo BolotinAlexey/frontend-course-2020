@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-RU">
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -12,20 +12,339 @@
   <title>dashboard</title>
 </head>
 <body>
-<div class="container-fluid">
-  <header class="row text-left">
-    <div class="col-2 p-3 mb-2 bg-dark text-light">
+<div class="container-fluid h-75">
+  <nav class="row">
+    <a class="col-2 p-1 mb-0 bg-dark text-light text-decoration-none  text-left  align-text-bottom" href="index.html">
       Travel Up
+    </a>
+    <div class="col-10 p-1 mb-0 bg-dark text-white">
+      <div class="row">
+        <form action="#" class="col-10 p-1">
+          <input class="search text-white w-100 form-control" type="search" placeholder="search">
+        </form>
+        <a class="col-2 p-1 text-decoration-none text-white text-center" href="#">
+          Sign Out
+        </a>
+      </div>
     </div>
-<!--    <div class="col-9 p-3 mb-2 search">-->
-<!--      Search-->
-<!--    </div>-->
-    <div class="col-10 p-3 mb-2 bg-dark text-right">
+  </nav>
+  <div class="row">
+    <aside class="col-2 bg-light px-0">
+      <ul class="list-unstyled nav flex-column">
+        <li class="nav-item p-2">
+          <img src="images/home-solid.svg" alt="home">
+          <a href="index.html">Dashboard</a>
+        </li>
+        <li class="nav-item p-2">
+          <img src="images/file-regular.svg" alt="file-regular">
+          <a href="#">Orders</a>
+        </li>
+        <li class="nav-item p-2">
+          <img src="images/shopping-cart-solid.svg" alt="shopping">
+          <a href="#">Products</a>
+        </li>
+        <li style="fill: #007bff" class="nav-item p-2 active">
+          <img src="images/users-solid.svg" alt="users">
+          <a class="text-primary" href="#">Customers</a>
+        </li>
+        <li class="nav-item p-2">
+          <img src="images/chart-bar-solid.svg" alt="chart">
+          <a href="#">Reports</a>
+        </li>
+        <li class="nav-item p-2">
+          <img src="images/buffer-brands.svg" alt="buffer">
+          <a href="#">Integrations</a>
+        </li>
+      </ul>
+      <br>
+      <div class="d-flex justify-content-between">
+        <span class="p-2">SAVED REPORTS</span>
+        <a class="d-flex align-items-center" href="#">
+          <img src="images/plus-circle-solid.svg" alt="plus-circle">
+        </a>
+      </div>
 
-      Sign Out
-    </div>
-  </header>
+      <ul class="list-unstyled nav flex-column">
+        <li class="nav-item p-2">
+          <img src="images/file-alt-regular.svg" alt="file-alt">
+          <a href="index.html">Current month</a>
+        </li>
+
+        <li class="nav-item p-2">
+          <img src="images/file-alt-regular.svg" alt="file-alt">
+          <a href="index.html">Last quarter</a>
+        </li>
+
+        <li class="nav-item p-2">
+          <img src="images/file-alt-regular.svg" alt="file-alt">
+          <a href="index.html">Social engagement</a>
+        </li>
+
+        <li class="nav-item p-2">
+          <img src="images/file-alt-regular.svg" alt="file-alt">
+          <a href="index.html">Year-end sale</a>
+        </li>
+      </ul>
+
+    </aside>
+    <main class="col-10">
+      <div class="row d-flex justify-content-between">
+        <h2 class="p-3">Customers</h2>
+        <div class="d-flex justify-content-between p-3 my-auto">
+          <div class="btn-group px-2">
+            <button class="btn btn-outline-dark btn-sm">
+              Share
+            </button>
+            <button class="btn btn-outline-dark btn-sm">
+              Export
+            </button>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropdown-toggle d-flex align-items-center btn btn-outline-dark btn-sm" type="button"
+                    data-toggle="dropdown">
+              <img class="pr-1" src="images/calendar-regular.svg" alt="calendar">
+              This week
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item btn-sm" href="#">Action1</a>
+              <a class="dropdown-item btn-sm" href="#">Action2</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <table class="table-striped table">
+        <thead>
+        <tr>
+          <th>
+            <input type="checkbox">
+          </th>
+          <th>#</th>
+          <th>Name Surname</th>
+          <th class="text-right">Age</th>
+          <th>City</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody class="text btn-sm">
+        <tr>
+          <th>
+            <input type="checkbox">
+          </th>
+          <th>1001</th>
+          <th>Lorem</th>
+          <th class="text-right">18</th>
+          <th>dolor</th>
+          <th>sit</th>
+          <th class="btn-group py-1">
+            <button class="btn btn-danger btn-sm">
+              Delete
+            </button>
+            <button class="btn btn-warning btn-sm">
+              Edit
+            </button>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <input type="checkbox">
+          </th>
+          <th>1002</th>
+          <th>amet</th>
+          <th class="text-right">45</th>
+          <th>adipiscing</th>
+          <th>elit</th>
+          <th class="btn-group py-1">
+            <button class="btn btn-danger btn-sm">
+              Delete
+            </button>
+            <button class="btn btn-warning btn-sm">
+              Edit
+            </button>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <input type="checkbox">
+          </th>
+          <th>1003</th>
+          <th>integer</th>
+          <th class="text-right">13</th>
+          <th>odio</th>
+          <th>Praesent</th>
+          <th class="btn-group py-1">
+            <button class="btn btn-danger btn-sm">
+              Delete
+            </button>
+            <button class="btn btn-warning btn-sm">
+              Edit
+            </button>
+          </th>
+        </tr>
+        <tr class="table-success">
+          <th>
+            <input type="checkbox" checked>
+          </th>
+          <th>1003</th>
+          <th>libero</th>
+          <th class="text-right">49</th>
+          <th>cirsus</th>
+          <th>ante</th>
+          <th class="btn-group py-1">
+            <button class="btn btn-danger btn-sm">
+              Delete
+            </button>
+            <button class="btn btn-warning btn-sm">
+              Edit
+            </button>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <input type="checkbox">
+          </th>
+          <th>1004</th>
+          <th>dapibus</th>
+          <th class="text-right">34</th>
+          <th>Sed</th>
+          <th>nisi</th>
+          <th class="btn-group py-1">
+            <button class="btn btn-danger btn-sm">
+              Delete
+            </button>
+            <button class="btn btn-warning btn-sm">
+              Edit
+            </button>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <input type="checkbox">
+          </th>
+          <th>1005</th>
+          <th>Nulla</th>
+          <th class="text-right">18</th>
+          <th>sem</th>
+          <th>at</th>
+          <th class="btn-group py-1">
+            <button class="btn btn-danger btn-sm">
+              Delete
+            </button>
+            <button class="btn btn-warning btn-sm">
+              Edit
+            </button>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <input type="checkbox">
+          </th>
+          <th>1006</th>
+          <th>nibh</th>
+          <th class="text-right">23</th>
+          <th>imperdiet</th>
+          <th>Duis</th>
+          <th class="btn-group py-1">
+            <button class="btn btn-danger btn-sm">
+              Delete
+            </button>
+            <button class="btn btn-warning btn-sm">
+              Edit
+            </button>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <input type="checkbox">
+          </th>
+          <th>1007</th>
+          <th>saggitis</th>
+          <th class="text-right">15</th>
+          <th>Praesent</th>
+          <th>mauris</th>
+          <th class="btn-group py-1">
+            <button class="btn btn-danger btn-sm">
+              Delete
+            </button>
+            <button class="btn btn-warning btn-sm">
+              Edit
+            </button>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <input type="checkbox">
+          </th>
+          <th>1008</th>
+          <th>Fusce</th>
+          <th class="text-right">20</th>
+          <th>tellus</th>
+          <th>set</th>
+          <th class="btn-group py-1">
+            <button class="btn btn-danger btn-sm">
+              Delete
+            </button>
+            <button class="btn btn-warning btn-sm">
+              Edit
+            </button>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <input type="checkbox">
+          </th>
+          <th>1009</th>
+          <th>augue</th>
+          <th class="text-right">35</th>
+          <th>porta</th>
+          <th>Mauris</th>
+          <th class="btn-group py-1">
+            <button class="btn btn-danger btn-sm">
+              Delete
+            </button>
+            <button class="btn btn-warning btn-sm">
+              Edit
+            </button>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <input type="checkbox">
+          </th>
+          <th>1010</th>
+          <th>massa</th>
+          <th class="text-right">41</th>
+          <th>lacinia</th>
+          <th>arcu</th>
+          <th class="btn-group py-1">
+            <button class="btn btn-danger btn-sm">
+              Delete
+            </button>
+            <button class="btn btn-warning btn-sm">
+              Edit
+            </button>
+          </th>
+        </tr>
+        </tbody>
+      </table>
+      <ul class="list-unstyled btn-group pagination">
+        <li class="page-item">
+          <a class="page-link" href="#"><<</a></li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item "><a class="page-link" href="#">3</a></li>
+        <li class="page-item "><a class="page-link" href="#">>></a></li>
+      </ul>
+
+
+    </main>
+  </div>
 </div>
+
+</div>
+
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS
